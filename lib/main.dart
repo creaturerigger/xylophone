@@ -19,7 +19,11 @@ class XylophoneApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               for (int i = 1; i != 8; i++)
-              XylophoneButton(color: colors[i - 1], player: player, onPressedFunction: () => playSound(i, player),),
+              XylophoneButton(
+                color: colors[i - 1],
+                player: player,
+                onPressedFunction: () => playSound(i, player),
+              ),
             ],
           ),
         ),
